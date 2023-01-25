@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('./images/fundo_chamas.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+
+.simpsonsFilme {
+    z-index: 999;
+    width: 400px;
+}
+
+.simpsons {
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    justify-content: center;
+    width: 50%;
+    animation: MotoSimpsons 5s infinite;
+}
+
+@keyframes MotoSimpsons {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+
+.data {
+    
+}
