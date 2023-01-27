@@ -39,8 +39,8 @@ body {
 .donut {
     position: absolute;
     width: 166px;
-    top: 28.9%;
-    left: 16.9%;
+    top: 30%;
+    left: 14%;
     z-index: 100;
     animation: donut 5s;
     opacity: 0;  
