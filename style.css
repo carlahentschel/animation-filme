@@ -3,22 +3,60 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     background: url('./images/fundo_chamas.webp');
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     overflow-y: hidden;
     overflow-x: hidden;
+    animation: bg-pan-top 8s both;   
 }
 
-
+@keyframes bg-pan-top {
+    0% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
 
 .simpsonsFilme {
-    z-index: 999;
-    width: 400px;
+    z-index: 50;
+    width: 450px;
+    margin-left: 20%;
+}
+
+.donut {
+    position: absolute;
+    width: 166px;
+    top: 28.9%;
+    left: 16.9%;
+    z-index: 100;
+    animation: donut 5s;
+    opacity: 0;  
+}
+
+@keyframes donut {
+    0% {   
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
 }
 
 .simpsons {
@@ -27,20 +65,51 @@ body {
     left: 30%;
     justify-content: center;
     width: 50%;
-    animation: MotoSimpsons 5s infinite;
+    animation: motoSimpsons 5s infinite ease-out;
 }
 
-@keyframes MotoSimpsons {
+@keyframes motoSimpsons {
     0% {
-        width: 50%;
+        width: 40%;
     }
-
     100% {
-        width: 85%;
+        width: 80%;
     }
 }
 
+section {
+    align-self: center; 
+}
+
+article {
+    width: 400px;
+}
 
 .data {
-    
+    font-family:'Gloria Hallelujah', cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-left: 30%;
+    animation: vibrate-2 0.3s linear infinite both; 
 }
+
+ @keyframes vibrate-2 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(2px, -2px);
+    }
+    40% {
+      transform: translate(2px, 2px);
+    }
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
