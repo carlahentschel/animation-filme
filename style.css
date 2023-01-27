@@ -32,17 +32,17 @@ body {
 
 .simpsonsFilme {
     z-index: 50;
-    width: 450px;
+    width: 500px;
     margin-left: 20%;
 }
-
+  
 .donut {
     position: absolute;
-    width: 166px;
-    top: 28.8%;
-    left: 16.9%;
+    width: 175px;
+    top: 31.7%;
+    left: 17.4%;
     z-index: 100;
-    animation: donut 5s;
+    animation: donut 4s;
     opacity: 0;  
 }
 
@@ -73,7 +73,7 @@ body {
         width: 40%;
     }
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -87,7 +87,7 @@ article {
 
 .data {
     font-family:'Gloria Hallelujah', cursive;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-left: 30%;
     animation: vibrate-2 0.3s linear infinite both; 
